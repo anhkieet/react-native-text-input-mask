@@ -48,7 +48,7 @@ export default class TextInputMask extends Component {
       }
 
       if (this.props.mask !== nextProps.mask) {
-        setMask(findNodeHandle(this.input), nextProps.mask)
+        setMask(findNodeHandle(this.input), nextProps.mask, nextProps.value)
       }
     }
   }
